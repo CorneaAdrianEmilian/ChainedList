@@ -53,3 +53,25 @@ void cList::delList(cList* head)
 	}
 }
 
+bool cList::findElement(int& element,cList* head)
+{
+	while (head->next != nullptr) 
+	{
+		if (head->data == element)
+			return true;
+		head = head->next;
+	}
+	return false;
+}
+
+cList* cList::returnNode(int& element, cList* head)
+{
+	while (head->next != nullptr)
+	{
+		if (head->data == element)
+			return head;
+		head = head->next;
+	}
+	return nullptr;
+}
+

@@ -15,6 +15,12 @@ int main()
 	head->addTail(head, 99);
 	head->printList(head);
 
+	int cauta = 25;
+	if (head->findElement(cauta, head))
+		std::cout << " element gasit\n";
+	cList* var = head->returnNode(cauta, head);
+	std::cout << var->getData();
+
 	head->delList(head);
 
 }

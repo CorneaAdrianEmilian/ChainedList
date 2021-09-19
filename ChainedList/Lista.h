@@ -17,6 +17,9 @@ public:
 	void addTail(cList* head,int new_data);
 	void printList(cList* head);
 	void delList(cList* head);
+	bool findElement(int& element,cList* head);
+	cList* returnNode(int& element, cList* head);
+	inline int getData() { return data; }
 };
 
 
